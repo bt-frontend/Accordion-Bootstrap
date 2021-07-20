@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordin</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+    <style>
+        .container {
+            margin-top: 5rem;
+        }
+
+        /* Accordin Bootstrap */
+        .card {
+            border: 0;
+            border-radius: 0;
+        }
+
+        .card-header {
+            padding: 0!important;
+        }
+
+        .pt-collapsed {
+            display: block;
+            padding: .75rem 1.25rem;
+        }
+
+        .pt-collapsed .fa-chevron-down {
+            transform: rotate(-180deg);
+            transition: all 400ms ease;
+        }
+
+        .pt-collapsed.collapsed .fa-chevron-down {
+            transform: rotate(0deg);
+            transition: all 400ms ease;
+        }
+
+        /* #collapseOne, .pt-card-body-collapse { */
+        .pt-card-body-collapse {
+            border-bottom: 1px solid lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- accordion -->
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="pt-collapsed collapsed" href="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                                    Collapsible Group Item #1 <i class="fas fa-chevron-down"></i>
+                                </h5>
+                            </a>
+                        </div>
+                  
+                        <div id="collapseOne" class="pt-card-body-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion closing -->
+                <!-- accordion -->
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <a class="pt-collapsed collapsed" href="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                                    Collapsible Group Item #2 <i class="fas fa-chevron-down"></i>
+                                </h5>
+                            </a>
+                        </div>
+                  
+                        <div id="collapseTwo" class="pt-card-body-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion closing -->
+                <!-- accordion -->
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <a class="pt-collapsed collapsed" href="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                                    Collapsible Group Item #3 <i class="fas fa-chevron-down"></i>
+                                </h5>
+                            </a>
+                        </div>
+                  
+                        <div id="collapseThree" class="pt-card-body-collapse collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion closing -->
+            </div> <!-- col-md-12 closing -->
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.all.min.js"></script>
+
+    
+</body>
+</html>
